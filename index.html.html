@@ -1,0 +1,166 @@
+<html>
+<head> 
+	<title> HTML PROGRAMS </title>
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<link rel="stylesheet" type="text/css" href="style2.css">		
+</head>
+<body>
+	<ul>
+		<li class="active"><a>HOME</a></li>
+		<li><a>HTML</a>
+			<ul class="nav">
+				<li><a href="">Text formatting</a>
+			<ul class="sub-menu">	
+			<li><a href="text formatting.txt">input</a></li>
+			<li><a href="text formatting.html">output</a></li>
+			</ul>
+			</li>
+      				<li><a href="">Table tag</a>
+			<ul class="sub-menu-one">	
+			<li><a href="tabletag.txt">input</a></li>
+			<li><a href="tabletag.html">output</a></li>
+			</ul>
+			</li>
+				<li><a href="">Form page</a>
+			<ul class="sub-menu-two">	
+			<li><a href="form page.txt">input</a></li>
+			<li><a href="form page.html">output</a></li>
+			</ul>
+			</li>
+				<li><a href="">Anchor tag</a>
+			<ul class="sub-menu-three">	
+			<li><a href="first page.txt">input</a></li>
+			<li><a href="first page.html">output</a></li>
+			</ul>
+			</li>
+				<li><a href="">Audio tag</a>
+			<ul class="sub-menu-four">	
+			<li><a href="audio.txt">input</a></li>
+			<li><a href="audio.html">output</a></li>
+			</ul>
+			</li>
+				<li><a href="">video tag</a>
+			<ul class="sub-menu-one">	
+			<li><a href="video.txt">input</a></li>
+			<li><a href="video.html">output</a></li>
+			</ul>
+			</li>
+			</ul>
+		</li>
+		<li><a>JAVA</a>
+		<ul class="nav">
+			<li><a href="">Reverse number</a>
+				<ul class="sub-menu">	
+				<li><a href="r_num.txt">input</a></li>
+				<li><a href="r_num.html">output</a></li>
+			</ul>
+			</li>
+			<li><a href="#">factorial number</a>
+				<ul class="sub-menu-one">	
+				<li><a href="fact.txt">input</a></li>
+				<li><a href="fact.html">output</a></li>
+			</ul>
+			</li>
+			<li><a href="#">prime number</a>
+				<ul class="sub-menu-two">	
+				<li><a href="prime.txt">input</a></li>
+				<li><a href="prime.html">output</a></li>
+			</ul>
+			</li>
+			<li><a href="#">palindrome num</a>
+				<ul class="sub-menu-three">	
+				<li><a href="pali1.txt">input</a></li>
+				<li><a href="pali1.html">output</a></li>
+			</ul>
+			</li>
+			<li><a href="#">fibonacci series</a>
+				<ul class="sub-menu-four">	
+				<li><a href="fibo.txt">input</a></li>
+				<li><a href="fibo.html">output</a></li>
+			</ul>
+			</li>
+			<li><a href="">even-odd</a>
+				<ul class="sub-menu-five">
+					<li><a href="">input</a></li>
+					<li><a href="">input</a></li>
+				</ul>
+			</li>	
+		</ul>
+		</li>
+		<li><a href="">CONTACT</a></li>
+		<ul class="seb-menu-six">
+<form action="javascript:sendmail()" method="post">
+<div class="title">
+	<h2>CONTACT INFO</h2>
+</div>
+	<input type="text" name="text" id="name" placeholder="Your Name*"></br>
+</br>
+	<input type="email" name="email" id="email" placeholder="Your email*"></br>
+</br>
+	<input type="tel" name="Phone" id="phone" placeholder="Phone*"></br>
+</br>
+	<textarea rows="4" cols="40" name="Message" id="message" placeholder="message">
+	 Enter your message
+	</textarea></br>
+</form>
+<div class="title">
+	<h1>CONTACT INFO</h1>
+</div>
+16/102 Poonam sargam complex,</br>
+Off.GCC club road,</br>
+Mira road(East),Thane 401107.</br>
+Maharashtra.
+</br>
+9619097214</br>
+</br>
+alishasaiyed50246@gmail.com</br>
+</br>
+
+</div>
+</form>
+	</ul>
+		<div class="title">
+			<h1>PROGRAMS</h1>
+		</div>
+
+		<div class="button">
+			<a href="videos.html" class="btn"> WATCH VIDEOS </a>
+			<a href="#" class="btn"> LEARN MORE</a>
+		</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+	function sendmail(){
+var name = $('#name').val();
+var email = $('#email').val();
+var phone =$('#phone').val();
+var message = $('#message').val();
+
+var Body='name : '+name+'<br>email: +'email+'<br>phone: '+phone+'<br>message: '+message;
+}
+   Email.send({
+    Host : "smtp.gmail.com",
+    BodyUsername : "saiyedalisha110@gmail.com",
+    Password : "alisha@10",
+    To : 'alishasaiyed50246@gmail.com',
+    From : "saiyedalisha110@gmail.com",
+    Subject : "This is the subject:"+name,
+    Body : 
+}).then(
+message =>{
+	if(message=='ok'){
+		alert('thankyou your email has been send');
+}
+else{
+	console.error(Message);
+	alert('check the message again')
+		}
+	}
+
+);
+</script>
+</html>

@@ -1,0 +1,79 @@
+<html>
+<head>	
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style2.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="contact.js"></script>
+</head>
+<body>
+	<p id = "name"></p>
+	<p id = "email" ></p>
+	<p id = "phone" ></p>
+	<p id = "message"></p>
+<div class="title">
+	<h2>CONTACT INFO</h2>
+</div>
+<div class="contact-form">
+<form action="javascript:sendmail()" method="post">
+	<input type="text" class="form-control" name="text" id="name" placeholder="Your Name*"></br>
+</br>
+	<input type="email" class="form-control" name="email"id="email" placeholder="Your email*"></br>
+</br>
+	<input type="tel" class="form-control" name="Phone" id="phone" placeholder="Phone*"></br>
+</br>
+	<textarea rows="4" cols="40" class="form-control" name="Message" id="message" placeholder="message">
+	 Enter your message
+	</textarea></br>
+	<div class="buttons">
+<input id = "id1" type = "Submit" value ="send message" onclick="sendmail()">
+</div>
+</form>
+<script>
+function sendmail(){
+var name = $('#name').val();
+var email = $('#email').val();
+var phone =$('#phone').val();
+var message = $('#message').val()
+
+var Body='name: '+name+'<br>email: '+email+'<br>phone: '+phone+'<br>message: '+message;
+}
+Email.send({
+   Host : "smtp.gmail.com",
+   port : 587
+   Username : "saiyedalisha110@gmail.com",
+   Password : "alisha@10",
+   To : 'alishasaiyed50246@gmail.com',
+   From : "saiyedalisha110@gmail.com",
+   Subject : "This is the subject:"+name,
+   Body : "Body"
+})then(
+const obj = document.getElementById('id1')
+message =>{
+	if(Body == null){
+		alert('inavlid details')
+	}
+	else{
+		alert('Thank you.your mail has been send')
+	}
+}
+);
+</script>
+</div>
+16/102 Poonam sargam complex,</br>
+Off.GCC club road,</br>
+Mira road(East),Thane 401107.</br>
+Maharashtra.
+</br>
+9619097214</br>
+</br>
+alishasaiyed50246@gmail.com</br>
+</br>
+</div>
+</form>
+</body>	
+</html>
+
+
+	

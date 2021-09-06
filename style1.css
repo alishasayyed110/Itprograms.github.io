@@ -1,0 +1,111 @@
+body{
+	background:url(789.png);
+	background-size: cover;
+	font-family: georgia,serif;
+	font-style:bold;
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+li{
+	float: left;
+	width: 175px;
+	height: 40px;
+	background-color:dark pink;
+	line-height:40px;
+	text-align:centre;
+	font-size:20px;
+	padding: 1px;
+}
+ul li a{
+	text-decoration:none;
+	color: black;
+	display:block;
+	border: 2px solid #000;
+	padding: 1px;
+}
+ul li a:hover{
+	background-color:white;
+	opacity:0.5;
+}
+ul li.active a{
+	background-color:white;
+}
+.sub-menu{
+	display:none;
+	list-style-type:none;
+	margin-left:177px;
+	margin-top:-45px;
+}
+.nav li:hover .sub-menu{
+	display:block;
+}
+.sub-menu-one{
+	display:none;
+	list-style-type:none;
+	margin-left:177px;
+	margin-top:-45px;
+}
+.nav li:hover .sub-menu-one{
+	display:block;
+}
+.sub-menu-two{
+	display:none;
+	list-style-type:none;
+	margin-left:177px;
+	margin-top:-45px;
+}
+.nav li:hover .sub-menu-two{
+	display:block;
+}
+.sub-menu-three{
+	display:none;
+	list-style-type:none;
+	margin-left:177px;
+	margin-top:-45px;
+}
+.nav li:hover .sub-menu-three{
+	display:block;
+}
+.sub-menu-four{
+	display:none;
+	list-style-type:none;
+	margin-left:177px;
+	margin-top:-45px;
+}
+.nav li:hover .sub-menu-four{
+	display:block;
+}
+ul li ul li{
+	display:none;
+}
+ul li:hover ul li{
+	display:block;
+}
+.title{
+	position: absolute;
+	top: 55%;
+	left: 55%;
+	transform: translate(-50%,-50%);
+}
+.title h1{
+	font-size: 70px;
+}
+.button{
+	position: absolute;
+	top: 64%;
+	left: 55%;
+	transform: translate(-50%,-50%);	
+}
+.btn{
+	border: 2px solid;
+	padding: 11px 32px;
+	color: black;
+	text-decoration: none;
+	margin:1px;
+}
+.btn:hover{
+	background-color: #fff;
+}
